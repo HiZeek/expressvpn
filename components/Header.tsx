@@ -6,7 +6,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Header = () => {
   return (
-    <header>
+    <header className="bg-white">
       <Container className="flex justify-between items-center p-5">
         <Link href="/">
           <Image src="/assets/logo.svg" alt="Logo" width={204} height={40} />

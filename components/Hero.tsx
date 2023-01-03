@@ -16,7 +16,7 @@ const Hero = () => {
           Go further with the #1 trusted leader in VPN
         </p>
         <Link
-          className="flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-500 py-4 px-9 text-xl font-semibold mb-5"
+          className="flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold mb-5"
           href="#"
         >
           Get ExpressVPN <EastIcon className="ml-1" />

@@ -38,7 +38,7 @@ const FirstSection = () => {
               high-speed servers across 94 countries puts you in control.
             </p>
             <Link
-              className=" w-[230px] flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-500 py-4 px-9 text-xl font-semibold"
+              className=" w-[230px] flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold"
               href="#"
             >
               Get ExpressVPN
@@ -78,7 +78,7 @@ const FirstSection = () => {
               covered.
             </p>
             <Link
-              className=" w-[230px] flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-500 py-4 px-9 text-xl font-semibold"
+              className=" w-[230px] flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold"
               href="#"
             >
               Get ExpressVPN
@@ -90,7 +90,7 @@ const FirstSection = () => {
             {firstList}
           </div>
           <div className="flex flex-col items-center mt-20">
-            <Link className="text-greenColor border-b-2 border-greenColor hover:border-yellowColor hover:text-mainColor duration-500" href="#">
+            <Link className="text-greenColor border-b-2 border-greenColor hover:border-yellowColor hover:text-mainColor duration-300" href="#">
               See more advantages &gt;
             </Link>
           </div>

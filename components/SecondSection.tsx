@@ -7,7 +7,7 @@ const SecondSection = () => {
   const secondList = secondSectionItems.map((item) => (
     <div
       key={item.id}
-      className="w-[370px] bg-white rounded-[32px] shadow-boxShadowColor p-7"
+      className="w-[370px] bg-white rounded-[32px] shadow p-7"
     >
       <h4 className="text-center text-2xl text-mainColor font-bold mb-5">
         {item.step}
@@ -36,7 +36,7 @@ const SecondSection = () => {
         </div>
         <div className="flex flex-col items-center mt-10">
           <Link
-            className=" w-[230px] flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-500 py-4 px-9 text-xl font-semibold"
+            className=" w-[230px] flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold"
             href="#"
           >
             Get ExpressVPN
