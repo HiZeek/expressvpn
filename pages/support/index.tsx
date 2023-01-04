@@ -27,10 +27,10 @@ const Index = (props: any) => {
         <div className="support-banner">
           <Container className="py-20 px-5">
             <div className="flex flex-col items-center">
-              <h1 className="text-white text-6xl mb-[30px] font-medium">
+              <h1 className="text-white text-center text-[42px] md:text-6xl mb-[30px] font-medium">
                 ExpressVPN Support
               </h1>
-              <div className="w-[570px] h-[60px] bg-white flex items-center px-3 rounded-lg">
+              <div className="w-[300px] min-[425px]:w-[380px] md:w-[570px] h-[60px] bg-white flex items-center px-3 rounded-lg">
                 <input
                   type="text"
                   placeholder="Search the ExpressVPN Support Center"
@@ -42,7 +42,7 @@ const Index = (props: any) => {
           </Container>
         </div>
         <Container className="pt-20 pb-10 px-5">
-          <div className="grid grid-cols-4 max-w-[1200px] m-auto">
+          <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 gap-y-10  min-[1200px]:grid-cols-4 max-w-[1200px] m-auto">
             <SupportOptions
               img="/assets/setup-expressvpn.svg"
               title="Setting up ExpressVPN"
@@ -66,8 +66,8 @@ const Index = (props: any) => {
           </div>
         </Container>
         <Container className="pt-5 pb-20 px-5">
-          <h2 className="text-5xl text-center">Popular articles</h2>
-          <div className="grid grid-cols-2 gap-x-10 gap-y-5 pt-20 pb-10">
+          <h2 className="text-4xl md:text-5xl text-center">Popular articles</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 pt-20 pb-10">
             <Articles title="Find your ExpressVPN activation code" />
             <Articles title="Windows 7 and above (app setup)" />
             <Articles title="Frequently Asked Questions" />
@@ -79,7 +79,7 @@ const Index = (props: any) => {
             <Articles title="Update the ExpressVPN app" />
             <Articles title="Renew your ExpressVPN account" />
           </div>
-          <div className="pt-10 flex justify-between items-center">
+          <div className="pt-10 flex flex-col-reverse lg:flex-row justify-between items-center lg:gap-x-10">
             <Image
               src="/assets/support.svg"
               width={542}
@@ -94,21 +94,21 @@ const Index = (props: any) => {
                 Can’t find what you are looking for? Ask your questions via live
                 chat and get dedicated help.
               </p>
-              <div className="flex mt-10 mb-5 space-x-5">
+              <div className="grid md:flex mt-10 mb-5 gap-x-5">
                 <Link
-                  className="flex items-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold mb-5"
+                  className="text-center bg-greenColor hover:bg-yellowColor rounded-full text-white hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold mb-5"
                   href="#"
                 >
                   Chat with us
                 </Link>
                 <Link
-                  className="flex items-center text-greenColor border-2 border-greenColor hover:bg-yellowColor hover:border-yellowColor rounded-full hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold mb-5"
+                  className="text-center text-greenColor border-2 border-greenColor hover:bg-yellowColor hover:border-yellowColor rounded-full hover:text-mainColor duration-300 py-4 px-9 text-xl font-semibold mb-5"
                   href="#"
                 >
                   Email us
                 </Link>
               </div>
-              <p className="text-mainColor text-base">
+              <p className="mb-10 lg:mb-0 text-mainColor text-base">
                 ExpressVPN’s top-rated agents are here to help.
               </p>
             </div>
