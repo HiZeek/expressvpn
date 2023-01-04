@@ -9,7 +9,7 @@ import Link from "next/link";
 import ModalOutput from "../../components/ModalOutput";
 import { useState } from "react";
 
-const index = (props: any) => {
+const Index = (props: any) => {
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -120,4 +120,4 @@ const index = (props: any) => {
   );
 };
 
-export default index;
+export default Index;
