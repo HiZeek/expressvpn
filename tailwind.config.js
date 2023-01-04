@@ -14,6 +14,7 @@ module.exports = {
         yellowColor: '#d4e300',
         lightGreenColor: '#f9f8f2',
         boxShadowColor: '0 0.2rem 1.5rem rgb(0 0 0 / 10%)',
+        back: 'rgba(0, 0, 0, 0.5)',
       },
     },
   },

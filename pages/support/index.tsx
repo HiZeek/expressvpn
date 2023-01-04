@@ -6,11 +6,23 @@ import Articles from "../../components/Articles";
 import Footer from "../../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import ModalOutput from "../../components/ModalOutput";
+import { useState } from "react";
 
-const index = () => {
+const index = (props: any) => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
   return (
     <>
-      <Header />
+      <Header onConfirm={handleOpenModal} />
+      <ModalOutput show={openModal} onClose={handleCloseModal} />
       <section>
         <div className="support-banner">
           <Container className="py-20 px-5">

@@ -5,9 +5,22 @@ import Footer from "../components/Footer";
 import FirstSection from "../components/FirstSection";
 import SecondSection from "../components/SecondSection";
 import ThirdSection from "../components/ThirdSection";
+import { useState } from "react";
+import Modal from "../components/Modal";
+import ModalOutput from "../components/ModalOutput";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <div>
       <Head>
@@ -17,7 +30,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Hero />
+        <ModalOutput show={openModal} onClose={handleCloseModal} />
+        <Hero onConfirm={handleOpenModal} />
         <FirstSection />
         <SecondSection />
         <ThirdSection />

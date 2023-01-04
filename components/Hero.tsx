@@ -4,10 +4,10 @@ import Container from "./Container";
 import Header from "./Header";
 import EastIcon from "@mui/icons-material/East";
 
-const Hero = () => {
+const Hero = (props: any) => {
   return (
     <section className="hero-bg">
-      <Header />
+      <Header onConfirm={props.onConfirm} />
       <Container className="flex flex-col items-center pt-10 px-5">
         <h1 className="text-8xl text-mainColor mb-5 font-medium">
           The VPN that just works
