@@ -2,8 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
 import { firstSectionItems } from "../constants/SectionsItem";
+// import { sanityClient, urlFor } from "../sanity";
+// import { Service } from '../typings';
 
-const FirstSection = () => {
+// interface Props {
+//   service: [Service];
+// }
+
+const FirstSection = (props: any) => {
   const firstList = firstSectionItems.map((item) => (
     <div key={item.id} className="flex flex-col items-center">
       <Image
@@ -90,7 +96,10 @@ const FirstSection = () => {
             {firstList}
           </div>
           <div className="flex flex-col items-center mt-20">
-            <Link className="text-greenColor border-b-2 border-greenColor hover:border-yellowColor hover:text-mainColor duration-300" href="#">
+            <Link
+              className="text-greenColor border-b-2 border-greenColor hover:border-yellowColor hover:text-mainColor duration-300"
+              href="#"
+            >
               See more advantages &gt;
             </Link>
           </div>
@@ -101,3 +110,20 @@ const FirstSection = () => {
 };
 
 export default FirstSection;
+
+// export const getServerSideProps = async () => {
+//   const query = `*[_type == 'post'] {
+//     _id,
+//       title,
+//       description,
+//       mainImage,
+//       slug
+//   }`;
+
+//   const service = await sanityClient.fetch(query);
+//   return {
+//     props: {
+//       service,
+//     },
+//   };
+// };
