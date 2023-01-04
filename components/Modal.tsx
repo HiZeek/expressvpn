@@ -15,7 +15,7 @@ const Modal = (props: any) => {
         props.onClose();
     }
 
-    let portalElement = document.getElementById("overlays")!;
+    let portalElement = document.querySelector("#overlays")!;
 
     
     // const ModalContent = () => {
