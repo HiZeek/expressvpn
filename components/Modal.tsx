@@ -15,7 +15,7 @@ const Modal = (props: any) => {
         props.onClose();
     }
 
-    let portalElement = document.getElementById("overlays") as HTMLElement;
+    let portalElement = document.getElementById("overlays") as any;
 
     const modalContent = props.show ? (
         <div className="fixed top-0 left-0 w-full z-40 h-screen bg-back" onClick={props.onClose}>
