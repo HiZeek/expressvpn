@@ -26,7 +26,7 @@ const Modal = (props: any) => {
                 <div>{props.children}</div>
             </div>
         </div>
-    ) : null;
+    ) : <></>;
 
     if(isBrowser) {
         return ReactDOM.createPortal(modalContent, portalElement)
