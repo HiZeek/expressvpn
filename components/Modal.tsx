@@ -15,14 +15,7 @@ const Modal = (props: any) => {
         props.onClose();
     }
 
-    let portalElement = document.querySelector("#overlays")!;
-
-    
-    // const ModalContent = () => {
-    //   return (
-    //     <div>Modal</div>
-    //   )
-    // }
+    // let portalElement = document.querySelector("#overlays")!;
     
     const modalContent = props.show ? (
         <div className="fixed top-0 left-0 w-full z-40 h-screen bg-back" onClick={props.onClose}>
@@ -36,7 +29,7 @@ const Modal = (props: any) => {
     ) : <></>;
 
     if(isBrowser) {
-        return ReactDOM.createPortal(<>{modalContent}</>, portalElement)
+        return ReactDOM.createPortal(<>{modalContent}</>, document.querySelector("#overlays")!)
     } else {
         return null
     }
