@@ -28,15 +28,16 @@ const FirstSection = (props: any) => {
   return (
     <section>
       <Container className="px-5 py-20">
-        <div className="flex justify-between items-center py-10 max-w-[960px] m-auto">
+        <div className="grid md:flex justify-between items-center py-10 max-w-[960px] m-auto">
           <Image
             src="/assets/brickwall.avif"
             alt="brickwall"
             width={289.98}
             height={289.98}
+            className='w-[250px] min-[425px]:w-[350px] min-[550px]:w-[300px]'
           />
-          <div className="text-mainColor w-[400px]">
-            <h2 className="text-5xl font-medium mb-5">
+          <div className="text-mainColor w-[250px] min-[425px]:w-[350px] min-[550px]:w-[400px]">
+            <h2 className="text-4xl md:text-5xl font-medium mb-5">
               Secure access, worldwide
             </h2>
             <p className="text-base mb-5">
@@ -51,9 +52,9 @@ const FirstSection = (props: any) => {
             </Link>
           </div>
         </div>
-        <div className="flex justify-between items-center py-10 max-w-[960px] m-auto">
-          <div className="text-mainColor w-[400px]">
-            <h2 className="text-5xl font-medium mb-5">
+        <div className="grid md:flex justify-between items-center py-10 max-w-[960px] m-auto">
+          <div className="text-mainColor w-[250px] min-[425px]:w-[350px] min-[550px]:w-[400px]">
+            <h2 className="text-4xl md:text-5xl font-medium mb-5">
               Just one click to a safer internet
             </h2>
             <p className="text-base mb-5">
@@ -67,17 +68,19 @@ const FirstSection = (props: any) => {
             alt="lamp"
             width={289.98}
             height={289.98}
+            className='w-[250px] min-[425px]:w-[350px] min-[550px]:w-[300px]'
           />
         </div>
-        <div className="flex justify-between items-center py-10 max-w-[960px] m-auto">
+        <div className="grid md:flex justify-between items-center py-10 max-w-[960px] m-auto">
           <Image
             src="/assets/coverage.avif"
             alt="coverage"
             width={289.98}
             height={289.98}
+            className='w-[250px] min-[425px]:w-[350px] min-[550px]:w-[300px]'
           />
-          <div className="text-mainColor w-[400px]">
-            <h2 className="text-5xl font-medium mb-5">Use on any device</h2>
+          <div className="text-mainColor w-[250px] min-[425px]:w-[350px] min-[550px]:w-[400px]">
+            <h2 className="text-4xl md:text-5xl font-medium mb-5">Use on any device</h2>
             <p className="text-base mb-5">
               Phone, tablet, computer, router—no matter where you are or what
               devices you’re using, a single ExpressVPN subscription has got you
@@ -92,7 +95,7 @@ const FirstSection = (props: any) => {
           </div>
         </div>
         <div>
-          <div className="flex justify-between items-center pt-10 max-w-[1200px] m-auto space-x-5">
+          <div className="grid space-y-5 md:flex justify-between items-center pt-10 max-w-[1200px] m-auto space-x-5">
             {firstList}
           </div>
           <div className="flex flex-col items-center mt-20">

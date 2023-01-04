@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
       <main>
         <ModalOutput show={openModal} onClose={handleCloseModal} />
-        <Hero onConfirm={handleOpenModal} />
+        <Hero onConfirm={handleOpenModal} onClose={handleCloseModal} />
         <FirstSection />
         <SecondSection />
         <ThirdSection />

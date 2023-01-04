@@ -42,4 +42,15 @@
   .hover-shadow {
     box-shadow: 0 0 3.5rem 0 rgb(0 0 0 / 20%);
   }
+
+  @media only screen and (min-width: 1200px)  {
+    .hero-bg {
+      background-image: url(/assets/hero-bg.avif);
+      background-size: cover;
+      background-position: bottom;
+      position: relative;
+      height: 85vh;
+      width: 100%;
+    }
+  }
 }

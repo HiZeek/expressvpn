@@ -7,12 +7,12 @@ import EastIcon from "@mui/icons-material/East";
 const Hero = (props: any) => {
   return (
     <section className="hero-bg">
-      <Header onConfirm={props.onConfirm} />
+      <Header onConfirm={props.onConfirm} onClose={props.onClose} />
       <Container className="flex flex-col items-center pt-10 px-5">
-        <h1 className="text-8xl text-mainColor mb-5 font-medium">
+        <h1 className="text-center text-6xl md:text-8xl text-mainColor mb-10 font-medium">
           The VPN that just works
         </h1>
-        <p className="text-2xl text-mainColor font-bold mb-5">
+        <p className="text-center text-2xl text-mainColor font-bold mb-5">
           Go further with the #1 trusted leader in VPN
         </p>
         <Link

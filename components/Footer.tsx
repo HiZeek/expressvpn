@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="text-footerText">
       <div className="bg-mainColor">
         <Container className="pt-20 pb-5 px-5">
-          <div className="flex justify-between max-w-[1200px] m-auto">
+          <div className="grid space-y-5 md:space-y-0 md:flex md:justify-between max-w-[1200px] m-auto">
             <div>
               <h3 className="text-lg mb-5 font-medium">Products</h3>
               <ul className="text-sm space-y-3">
@@ -97,9 +97,9 @@ const Footer = () => {
       </div>
       <div className="bg-footerBottom">
         <Container className='p-5'>
-          <div className="flex justify-between items-center max-w-[1200px] m-auto">
-            <p>© 2022 ExpressVPN. All rights reserved.</p>
-            <div className="space-x-5">
+          <div className="grid justify-center md:flex md:justify-between md:items-center max-w-[1200px] m-auto">
+            <p className="text-xs mb-5">© 2022 ExpressVPN. All rights reserved.</p>
+            <div className="flex justify-center space-x-5">
               <Link href="#">
                 <YouTubeIcon />
               </Link>
