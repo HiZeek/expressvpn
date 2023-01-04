@@ -1,7 +1,7 @@
 // import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 
-import { useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
 const Modal = (props: any) => {
@@ -15,7 +15,7 @@ const Modal = (props: any) => {
         props.onClose();
     }
 
-    let portalElement = document.getElementById("overlays")!;
+    let portalElement = document.getElementById("overlays") as Element;
 
     const modalContent = props.show ? (
         <div className="fixed top-0 left-0 w-full z-40 h-screen bg-back" onClick={props.onClose}>
