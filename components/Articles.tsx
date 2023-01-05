@@ -1,5 +1,5 @@
-import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
-import Link from 'next/link';
+import KeyboardArrowRightOutlinedIcon from "@mui/icons-material/KeyboardArrowRightOutlined";
+import Link from "next/link";
 
 const Articles = (props: any) => {
   return (
@@ -7,7 +7,7 @@ const Articles = (props: any) => {
         <p className='hover:text-greenColor text-mainColor'>{props.title}</p>
         <KeyboardArrowRightOutlinedIcon />
     </Link>
-  )
-}
+  );
+};
 
 export default Articles;

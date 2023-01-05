@@ -1,16 +1,13 @@
-import {
-    createImageUrlBuilder,
-    createCurrentUserHook,
-    createClient
-} from 'next-sanity';
+import createImageUrlBuilder from '@sanity/image-url';
 
-export const config = {
-    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "development",
-    // dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "Production",
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-    useCdn: process.env.NODE_ENV === "development"
-    // useCdn: process.env.NODE_ENV === "production"
-}
+import sanityClient from '@sanity/client';
 
-export const sanityClient =createClient(config);
-export const urlFor = (source) => createImageUrlBuilder(config).image(source);
+export const client = sanityClient({
+   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID, 
+   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "Production",
+   apiVersion: '2021-08-31',
+   useCdn: process.env.NODE_ENV === "production"
+  });
+
+
+export const urlFor = (source) => createImageUrlBuilder(client).image(source);

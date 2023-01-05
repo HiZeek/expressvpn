@@ -1,10 +1,10 @@
-export interface Service {
+export interface Post {
     _id: string;
     title: string;
     description: string;
     mainImage: {
         asset: {
-            _ref: string;
+            url: string;
         };
     };
     slug: {

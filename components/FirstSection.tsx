@@ -2,14 +2,32 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
 import { firstSectionItems } from "../constants/SectionsItem";
-// import { sanityClient, urlFor } from "../sanity";
-// import { Service } from '../typings';
-
+// import { client, urlFor } from "../sanity";
+// import { Post } from "../typings";
 // interface Props {
-//   service: [Service];
+//   posts: [Post];
 // }
 
-const FirstSection = (props: any) => {
+// export const getServerSideProps = async () => {
+//   const query = `*[_type == 'post'] {
+//     _id,
+//       title,
+//       slug,
+//       description,
+//       mainImage,
+//   }`;
+
+//   const posts = await client.fetch(query);
+//   return {
+//     props: {
+//       posts,
+//     },
+//   };
+// };
+
+const FirstSection = (props) => {
+  // console.log(posts);
+  
   const firstList = firstSectionItems.map((item) => (
     <div key={item.id} className="flex flex-col items-center">
       <Image
@@ -114,19 +132,4 @@ const FirstSection = (props: any) => {
 
 export default FirstSection;
 
-// export const getServerSideProps = async () => {
-//   const query = `*[_type == 'post'] {
-//     _id,
-//       title,
-//       description,
-//       mainImage,
-//       slug
-//   }`;
 
-//   const service = await sanityClient.fetch(query);
-//   return {
-//     props: {
-//       service,
-//     },
-//   };
-// };
