@@ -1,13 +1,12 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import Hero from "../components/Hero";
-import Footer from "../components/Footer";
-import FirstSection from "../components/FirstSection";
-import SecondSection from "../components/SecondSection";
-import ThirdSection from "../components/ThirdSection";
+import Hero from "../components/sections/Hero";
+import Footer from "../components/layout/Footer";
+import FirstSection from "../components/sections/FirstSection";
+import SecondSection from "../components/sections/SecondSection";
+import ThirdSection from "../components/sections/ThirdSection";
 import { useState } from "react";
-import Modal from "../components/Modal";
-import ModalOutput from "../components/ModalOutput";
+import ModalOutput from "../components/multistepForm/ModalOutput";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {

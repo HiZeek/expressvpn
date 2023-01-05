@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Container from "./Container";
-import { firstSectionItems } from "../constants/SectionsItem";
+import Container from "../ui/Container";
+import { firstSectionItems } from "../../constants/SectionsItem";
 // import { client, urlFor } from "../sanity";
 // import { Post } from "../typings";
 // interface Props {

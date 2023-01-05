@@ -1,4 +1,4 @@
-import Container from "./Container";
+import Container from "../ui/Container";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';

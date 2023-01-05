@@ -1,12 +1,12 @@
-import Container from "../../components/Container";
-import Header from "../../components/Header";
+import Container from "../../components/ui/Container";
+import Header from "../../components/layout/Header";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import SupportOptions from "../../components/SupportOptions";
-import Articles from "../../components/Articles";
-import Footer from "../../components/Footer";
+import SupportOptions from "./SupportOptions";
+import Articles from "./Articles";
+import Footer from "../../components/layout/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import ModalOutput from "../../components/ModalOutput";
+import ModalOutput from "../../components/multistepForm/ModalOutput";
 import { useState } from "react";
 
 const Index = (props: any) => {

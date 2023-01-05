@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Container from "./Container";
-import Header from "./Header";
+import Container from "../ui/Container";
+import Header from "../layout/Header";
 import EastIcon from "@mui/icons-material/East";
 
 const Hero = (props: any) => {

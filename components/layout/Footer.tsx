@@ -1,4 +1,4 @@
-import Container from "./Container";
+import Container from "../ui/Container";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";

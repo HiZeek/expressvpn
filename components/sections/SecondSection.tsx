@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { secondSectionItems } from "../constants/SectionsItem";
-import Container from "./Container";
+import { secondSectionItems } from "../../constants/SectionsItem";
+import Container from "../ui/Container";
 
 const SecondSection = () => {
   const secondList = secondSectionItems.map((item) => (
