@@ -25,7 +25,7 @@ import { firstSectionItems } from "../constants/SectionsItem";
 //   };
 // };
 
-const FirstSection = (props) => {
+const FirstSection = () => {
   // console.log(posts);
   
   const firstList = firstSectionItems.map((item) => (
