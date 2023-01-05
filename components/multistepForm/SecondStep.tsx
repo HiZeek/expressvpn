@@ -10,7 +10,7 @@ const SecondStep = () => {
         </h2>
         <p>Kindly fill form below</p>
       </div>
-      <div className="flex flex-col mb-5 w-[500px]">
+      <div className="flex flex-col mb-5 w-[270px] min-[375px]:w-[300px] min-[425px]:w-[350px] md:w-[500px]">
         <label htmlFor="subject" className="text-xl mb-3">
           Subject
         </label>
@@ -22,7 +22,7 @@ const SecondStep = () => {
           className="w-full h-14 border-2 border-mainColor p-5 rounded-[10px] outline-none"
         />
       </div>
-      <div className="flex flex-col mb-10 w-[500px]">
+      <div className="flex flex-col mb-10 w-[270px] min-[375px]:w-[300px] min-[425px]:w-[350px] md:w-[500px]">
         <label htmlFor="phone" className="text-xl mb-3">
           Phone Number
         </label>
@@ -34,20 +34,6 @@ const SecondStep = () => {
           className="w-full h-14 border-2 border-mainColor p-5 rounded-[10px] outline-none"
         />
       </div>
-      {/* <div className="flex justify-between items-center">
-        <button
-          type="button"
-          className="bg-greenColor text-white px-8 py-4 rounded-[10px] hover:bg-yellowColor hover:text-mainColor duration-300 font-semibold text-xl"
-        >
-          Back
-        </button>
-        <button
-          type="button"
-          className="bg-greenColor text-white px-8 py-4 rounded-[10px] hover:bg-yellowColor hover:text-mainColor duration-300 font-semibold text-xl"
-        >
-          Next
-        </button>
-      </div> */}
     </div>
   );
 };

@@ -8,8 +8,8 @@ const FirstStep = () => {
         </h2>
         <p>Kindly fill form below</p>
       </div>
-      <div className="flex flex-col mb-5 w-[500px]">
-        <label htmlFor="full-name" className="text-xl mb-3">
+      <div className="flex flex-col mb-5 w-[270px] min-[375px]:w-[300px] min-[425px]:w-[350px] md:w-[500px]">
+        <label htmlFor="full-name" className="text-sm md:text-xl mb-3">
           Full Name
         </label>
         <input
@@ -20,8 +20,8 @@ const FirstStep = () => {
           className="w-full h-14 border-2 border-mainColor p-5 rounded-[10px] outline-none"
         />
       </div>
-      <div className="flex flex-col mb-10 w-[500px]">
-        <label htmlFor="email" className="text-xl mb-3">
+      <div className="flex flex-col mb-10 w-[270px] min-[375px]:w-[300px] min-[425px]:w-[350px] md:w-[500px]">
+        <label htmlFor="email" className="text-sm md:text-xl mb-3">
           Email
         </label>
         <input
@@ -32,14 +32,6 @@ const FirstStep = () => {
           className="w-full h-14 border-2 border-mainColor p-5 rounded-[10px] outline-none"
         />
       </div>
-      {/* <div className="flex flex-col items-center">
-        <button
-          type="button"
-          className="bg-greenColor text-white px-8 py-4 rounded-[10px] hover:bg-yellowColor hover:text-mainColor duration-300 font-semibold text-xl"
-        >
-          Next
-        </button>
-      </div> */}
     </div>
   );
 };
